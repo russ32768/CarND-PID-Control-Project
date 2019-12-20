@@ -1,6 +1,9 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+CarND-PID-Control-Project 
+Tuning of parameters started with throttle to produce 30 mph and a small p value that could navigate the first curve. A small integral component was added to help with drift on straight sections. A small derivative was also added to reduce oscillations. The second curve was too sharp to navigate with the values determined for the first curve. A speed reduction was applied to the throttle to slow the vehicle when the steer_value increased. To avoid reversing the vehicle a minimum throttle value of 0.1 was chosen. The second curve was still not navigated successfully, so the p value was increased to more rapidly steer into the curve. This resulted in a successful navigation of the complete course.
+
 ---
 
 ## Dependencies
